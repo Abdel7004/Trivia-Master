@@ -48,6 +48,8 @@ A trivia game where the player can select categories and answer questions to ear
 
 <img alt="Trivia Master" src="https://imgur.com/agf5KF5">
 
+![Trivia Master](https://imgur.com/UCiub7x.png)
+
 <a href="https://imgur.com/agf5KF5">link</a>
 
 ![Trivia Master](src="https://imgur.com/agf5KF5")
