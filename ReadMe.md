@@ -50,7 +50,8 @@ A trivia game where the player can select categories and answer questions to ear
 
 <a href="https://imgur.com/agf5KF5">link</a>
 
-![Trivia Master](https://imgur.com/agf5KF5 "Trivia Master")
+![Trivia Master](src="https://imgur.com/agf5KF5")
+![Trivia Master](src="https://imgur.com/a/8tfw6Gt")
 
 <img width="987" alt="Screen Shot 2022-07-12 at 7 47 27 PM" src="https://imgur.com/agf5KF5">
 
