@@ -46,16 +46,9 @@ A trivia game where the player can select categories and answer questions to ear
 
 ## Wire Frames
 
-<img alt="Trivia Master" src="https://imgur.com/agf5KF5">
+![Trivia Master 1](https://imgur.com/agf5KF5.png)
 
-![Trivia Master](https://imgur.com/UCiub7x.png)
-
-<a href="https://imgur.com/agf5KF5">link</a>
-
-![Trivia Master](src="https://imgur.com/agf5KF5")
-![Trivia Master](src="https://imgur.com/a/8tfw6Gt")
-
-<img width="987" alt="Screen Shot 2022-07-12 at 7 47 27 PM" src="https://imgur.com/agf5KF5">
+![Trivia Master 2](https://imgur.com/UCiub7x.png)
 
 ## User Stories
 
