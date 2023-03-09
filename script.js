@@ -1,7 +1,8 @@
 // Define the welcome message
 const welcomeMessage =
-  "Welcome to the trivia game! Here are the instructions: \n\nYou will be shown two categories. Choose one of them to get a random question. Answer the question and earn points! You will get a final score at the end. Good luck!";
+  "Welcome to the trivia game! Here are the instructions: <br><br>Answer the question and earn points! You will get a final score at the end. Good luck!";
 
+gameWelcome.innerHTML = welcomeMessage;
 // Display the welcome message to the player
 console.log(welcomeMessage);
 
@@ -30,7 +31,7 @@ const questions = [
       "Kareem Abdul-Jabbar",
       "Kobe Bryant",
     ],
-    correctAnswer: "Lebron James",
+    correctAnswer: "LeBron James",
   },
 
   {
@@ -77,8 +78,8 @@ function displayResults() {
   resultArea.innerHTML = `<p>You got ${numCorrect} out of ${questions.length} correct!</p>`;
 }
 
-function submitQuiz(e) {
-  e.preventDefault();
+function submitQuiz(evt) {
+  evt.preventDefault();
   const selectedAnswer = document.querySelector('input[name="answer"]:checked');
   if (selectedAnswer) {
     if (selectedAnswer.value === questions[currentQuestion].correctAnswer) {
@@ -97,7 +98,7 @@ function resetQuiz() {
   currentQuestion = 0;
   numCorrect = 0;
   displayQuestion(questions[currentQuestion]);
-  resultArea.innerHTML = "";
+  resultArea.innerHTML = "Choose your answer, and click the submit button";
 }
 
 form.addEventListener("submit", submitQuiz);
