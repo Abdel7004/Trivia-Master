@@ -4,9 +4,14 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	background-image: url(https://t3.ftcdn.net/jpg/02/53/98/62/360_F_253986268_I3wMfXKQvcjNVcRSLDTMfKtkvbmpAj1J.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* background-color: rgb(234, 153, 91); */
 }
 
 h1 {
+	color: #f5f5f5;
 	text-align: center;
 	margin: 32px 0;
 	font-size: 32px;
@@ -16,6 +21,17 @@ form {
 	margin: 32px auto;
 	max-width: 500px;
 	padding: 0 16px;
+}
+
+div#gameWelcome {
+	width: 50%;
+	margin: 0 auto;
+	background-color: #fcf7f7;
+	border-radius: 4px;
+	padding: 16px;
+	margin-bottom: 32px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	text-align: center;
 }
 
 div#questionArea {
@@ -70,6 +86,10 @@ button[type="button"] {
 	margin: 16px 0;
 	cursor: pointer;
 	transition: background-color 0.3s ease-in-out;
+}
+
+button[type="button"] {
+	margin-left: 120px;
 }
 
 button[type="submit"]:hover,
