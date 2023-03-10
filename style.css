@@ -1,98 +1,99 @@
 /* Styles for the trivia quiz */
 
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-image: url(https://t3.ftcdn.net/jpg/02/53/98/62/360_F_253986268_I3wMfXKQvcjNVcRSLDTMfKtkvbmpAj1J.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	/* background-color: rgb(234, 153, 91); */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://t3.ftcdn.net/jpg/02/53/98/62/360_F_253986268_I3wMfXKQvcjNVcRSLDTMfKtkvbmpAj1J.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: rgb(234, 153, 91); */
 }
 
 h1 {
-	color: #f5f5f5;
-	text-align: center;
-	margin: 32px 0;
-	font-size: 32px;
+  color: #f5f5f5;
+  text-align: center;
+  margin: 32px 0;
+  font-size: 32px;
 }
 
 form {
-	margin: 32px auto;
-	max-width: 500px;
-	padding: 0 16px;
+  margin: 32px auto;
+  max-width: 500px;
+  padding: 0 16px;
 }
 
 div#gameWelcome {
-	width: 50%;
-	margin: 0 auto;
-	background-color: #fcf7f7;
-	border-radius: 4px;
-	padding: 16px;
-	margin-bottom: 32px;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-	text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fcf7f7;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 32px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 div#questionArea {
-	background-color: #f5f5f5;
-	border-radius: 4px;
-	padding: 16px;
-	margin-bottom: 32px;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 32px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 div#questionArea h2 {
-	font-size: 24px;
-	font-weight: bold;
-	margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
 }
 
 div#questionArea p {
-	margin: 0;
+  margin: 0;
 }
 
 div#questionArea label {
-	display: block;
-	margin: 16px 0;
+  display: block;
+  margin: 16px 0;
 }
 
 div#resultArea {
-	background-color: #f5f5f5;
-	border-radius: 4px;
-	padding: 16px;
-	margin: 32px auto;
-	max-width: 500px;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 32px auto;
+  max-width: 500px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 div#resultArea p {
-	margin: 0;
-	font-weight: bold;
-	font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
 }
 
 button[type="submit"],
 button[type="button"] {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 16px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	border-radius: 4px;
-	margin: 16px 0;
-	cursor: pointer;
-	transition: background-color 0.3s ease-in-out;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 16px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button[type="button"] {
-	margin-left: 120px;
+  margin-left: 120px;
 }
 
 button[type="submit"]:hover,
 button[type="button"]:hover {
-	background-color: #3e8e41;
+  background-color: #3e8e41;
 }

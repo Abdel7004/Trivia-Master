@@ -76,6 +76,13 @@ function displayQuestion(question) {
 
 function displayResults() {
   resultArea.innerHTML = `<p>You got ${numCorrect} out of ${questions.length} correct!</p>`;
+  if (numCorrect) {
+    if (numCorrect > 2) {
+      resultArea.innerHTML = `<p>You are a Trivia Master!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
+    } else {
+      resultArea.innerHTML = `<p>Sorry you are not a Trivia Master yet!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
+    }
+  }
 }
 
 function submitQuiz(evt) {
