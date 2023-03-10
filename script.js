@@ -48,7 +48,7 @@ const questions = [
 ];
 
 // Define the categories
-const categories = ["History", "Science", "Sports", "Arts & Literature"];
+// const categories = ["History", "Science", "Sports", "Arts & Literature"];
 
 const form = document.querySelector("#quizForm");
 const questionArea = document.querySelector("#questionArea");
