@@ -47,7 +47,6 @@ const questions = [
   },
 ];
 
-
 const form = document.querySelector("#quizForm");
 const questionArea = document.querySelector("#questionArea");
 const resultArea = document.querySelector("#resultArea");
@@ -78,11 +77,9 @@ function displayResults() {
   if (numCorrect) {
     if (numCorrect > 2) {
       resultArea.innerHTML = `<p>You are a Trivia Master!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
-    } 
-    else if (numCorrect <= 2) {
+    } else if (numCorrect <= 2) {
       resultArea.innerHTML = `<p>Sorry you are not a Trivia Master yet!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
-    }
-    else if (numCorrect === 0) {
+    } else if (numCorrect === 0) {
       resultArea.innerHTML = `<p>Sorry you are not a Trivia Master yet!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
     }
   }
