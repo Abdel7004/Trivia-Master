@@ -3,6 +3,8 @@
 A trivia game where the player can select categories and answer questions to earn points. The game includes a number of questions and the player's final score is displayed at the end. Can you become a trivia master?
 
 Play the Game
+https://abdel7004.github.io/TriviaMaster.github.io/
+
 
 ## Wire Frames
 

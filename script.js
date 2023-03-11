@@ -79,12 +79,11 @@ function displayResults() {
       resultArea.innerHTML = `<p>You are a Trivia Master!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
     } else if (numCorrect <= 2) {
       resultArea.innerHTML = `<p>Sorry you are not a Trivia Master yet!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
-    } else if (numCorrect === 0) {
-      resultArea.innerHTML = `<p>Sorry you are not a Trivia Master yet!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
     }
   }
 }
 
+// This submitQuiz function was taken from Chat GPT
 function submitQuiz(evt) {
   evt.preventDefault();
   const selectedAnswer = document.querySelector('input[name="answer"]:checked');
