@@ -2,8 +2,8 @@
 const welcomeMessage =
   "Welcome to the trivia game! Here are the instructions: <br><br>Answer the question and earn points! You will get a final score at the end. Good luck!";
 
-gameWelcome.innerHTML = welcomeMessage;
 // Display the welcome message to the player
+gameWelcome.innerHTML = welcomeMessage;
 console.log(welcomeMessage);
 
 // Load questions and answers into an array of objects, each with a category property
@@ -24,14 +24,14 @@ const questions = [
 
   {
     category: "Sports",
-    question: "Who holds the record for the most career points in NBA history?",
+    question: "Which NBA Franchise has won the most championships?",
     answers: [
-      "LeBron James",
-      "Michael Jordan",
-      "Kareem Abdul-Jabbar",
-      "Kobe Bryant",
+      "Los Angeles Lakers",
+      "Boston Celtics",
+      "Chicago Bulls",
+      "Golden State Warriors",
     ],
-    correctAnswer: "LeBron James",
+    correctAnswer: "Boston Celtics",
   },
 
   {
@@ -47,8 +47,6 @@ const questions = [
   },
 ];
 
-// Define the categories
-// const categories = ["History", "Science", "Sports", "Arts & Literature"];
 
 const form = document.querySelector("#quizForm");
 const questionArea = document.querySelector("#questionArea");
@@ -56,6 +54,7 @@ const resultArea = document.querySelector("#resultArea");
 let currentQuestion = 0;
 let numCorrect = 0;
 
+// This displayQuestion function was taken from Chat GPT
 function displayQuestion(question) {
   const { category, question: questionText, answers } = question;
   questionArea.innerHTML = `
@@ -79,7 +78,11 @@ function displayResults() {
   if (numCorrect) {
     if (numCorrect > 2) {
       resultArea.innerHTML = `<p>You are a Trivia Master!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
-    } else {
+    } 
+    else if (numCorrect <= 2) {
+      resultArea.innerHTML = `<p>Sorry you are not a Trivia Master yet!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
+    }
+    else if (numCorrect === 0) {
       resultArea.innerHTML = `<p>Sorry you are not a Trivia Master yet!<br><br>You got ${numCorrect} out of ${questions.length} correct!</p>`;
     }
   }
