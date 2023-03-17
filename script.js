@@ -55,7 +55,12 @@ let numCorrect = 0;
 
 // This displayQuestion function was taken from Chat GPT
 function displayQuestion(question) {
-  const { category, question: questionText, answers } = question;
+  const { question: questionText, answers } = question;
+  const category = question.category //alternative to destructuring
+  // const questionText = question.question
+  // const answers = question.answers
+
+  
   questionArea.innerHTML = `
                 <div>
                     <h2>${category}</h2>
