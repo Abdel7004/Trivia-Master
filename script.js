@@ -91,7 +91,9 @@ function displayResults() {
 // This submitQuiz function was taken from Chat GPT
 function submitQuiz(evt) {
   evt.preventDefault();
+  // Preventing the screen from reloading, which is the default behavior when submitting a form
   const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+  // assigning the selectedAnswer variable to the radio button that the player chooses, that also has the current value of checked. which is added by the dom.
   if (selectedAnswer) {
     if (selectedAnswer.value === questions[currentQuestion].correctAnswer) {
       numCorrect++;

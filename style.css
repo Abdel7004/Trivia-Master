@@ -92,8 +92,16 @@ button[type="button"] {
 button[type="button"] {
   margin-left: 120px;
 }
-
-button[type="submit"]:hover,
+/* the commma is basically separating to selectors with the same style set. The two selectors are the submit and reset button while we are hovered over them will change the background color.*/
+button[type="submit"]:hover, 
 button[type="button"]:hover {
   background-color: #3e8e41;
 }
+
+/* Alternative to above
+ button[type="submit"]:hover{
+  background-color: #3e8e41;
+} 
+button[type="button"]:hover {
+  background-color: #3e8e41;
+}*/
